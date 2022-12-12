@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.erdi.SecureBox">
+
+    <uses-feature
+        android:name="android.hardware.fingerprint"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.USE_BIOMETRIC" />
+
+    <application
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:installLocation="internalOnly"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.erdi.SecureBox.Splash"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.erdi.SecureBox.ChangePassword" />
+        <activity
+            android:name="com.erdi.SecureBox.About"
+            android:label="Changelog" />
+        <activity android:name="com.erdi.SecureBox.Authorize" />
+        <activity
+            android:name="com.erdi.SecureBox.Add"
+            android:label="Add data" />
+        <activity
+            android:name="com.erdi.SecureBox.Modify"
+            android:label="Modify data" />
+        <activity android:name="com.erdi.SecureBox.Help" />
+        <activity android:name="com.erdi.SecureBox.wifi" />
+        <activity
+            android:name="com.erdi.SecureBox.Home"
+            android:label="@string/title_activity_home"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.erdi.SecureBox.Settings"
+            android:label="@string/title_activity_settings" />
+        <activity
+            android:name="com.erdi.SecureBox.MLock"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.erdi.SecureBox.Welcome"
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
